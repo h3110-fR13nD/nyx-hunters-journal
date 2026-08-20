@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nyx Hunter's Journal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>🩸 Nyx Hunter's Journal</h1>
+<p>The Lands Between await.</p>
+</header>
+
+<div class="stats">
+<div><span id="killed">0</span><small>Killed</small></div>
+<div><span id="remaining">0</span><small>Remaining</small></div>
+<div><span id="percent">0%</span><small>Complete</small></div>
+</div>
+
+<section>
+<h2>Tonight's Hunt</h2>
+
+<label><input checked disabled type="checkbox"> Rivers of Blood +10</label>
+<label><input checked disabled type="checkbox"> White Mask</label>
+<label><input checked disabled type="checkbox"> Mimic Tear +10</label>
+
+</section>
+
+<section>
+<h2>Bosses</h2>
+
+<div id="boss-list"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

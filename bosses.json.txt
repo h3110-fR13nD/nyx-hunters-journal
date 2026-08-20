@@ -1,0 +1,13 @@
+
+[
+{"id":"tree-sentinel","name":"Tree Sentinel"},
+{"id":"agheel","name":"Flying Dragon Agheel"},
+{"id":"beastman","name":"Beastman of Farum Azula"},
+{"id":"patches","name":"Patches"},
+{"id":"darriwil","name":"Bloodhound Knight Darriwil"},
+{"id":"radahn","name":"Starscourge Radahn"},
+{"id":"morgott","name":"Morgott"},
+{"id":"malenia","name":"Malenia"},
+{"id":"maliketh","name":"Maliketh"},
+{"id":"elden-beast","name":"Elden Beast"}
+]

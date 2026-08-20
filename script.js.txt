@@ -1,0 +1,42 @@
+
+const bossList=document.getElementById("boss-list");
+
+fetch("bosses.json")
+.then(r=>r.json())
+.then(bosses=>{
+
+bosses.forEach(b=>{
+
+const label=document.createElement("label");
+
+const box=document.createElement("input");
+box.type="checkbox";
+
+box.checked=localStorage.getItem(b.id)==="true";
+
+box.onchange=()=>{
+localStorage.setItem(b.id,box.checked);
+update();
+}
+
+label.append(box," ",b.name);
+
+bossList.appendChild(label);
+
+});
+
+update();
+
+});
+
+function update(){
+
+const boxes=document.querySelectorAll("#boss-list input");
+
+const done=[...boxes].filter(x=>x.checked).length;
+
+document.getElementById("killed").textContent=done;
+document.getElementById("remaining").textContent=boxes.length-done;
+document.getElementById("percent").textContent=Math.round(done/boxes.length*100)+"%";
+
+}
